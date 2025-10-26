@@ -94,7 +94,7 @@ Código:
         // Gerador de números aleatórios
         numerosorteio = new Random().Next(1, 10); // Gera um número entre 1 e 9
 
-        // ele executa a repetiçaõ pelo menos uma vez
+        // ele executa a repetição pelo menos uma vez
         do
         {
             Console.WriteLine($"Tentativa {tentativas + 1} de 5. Qual número foi sorteado?");
