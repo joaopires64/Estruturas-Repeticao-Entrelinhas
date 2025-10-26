@@ -50,7 +50,7 @@ Código:
         Random random = new Random();
 
         // estrutura de repetição para o jogo continuar 
-        while (pontuiacao < 3) // qual pontuação é necessária para vencer? O loop continua ENQUANTO a pontuação for MENOR que 3.
+        while (pontuiacao < ) // qual pontuação é necessária para vencer? O loop continua ENQUANTO a pontuação for MENOR que 3.
         {
             numero1 = random.Next(1, 101); // Gera um número entre 1 e 100
             numero2 = random.Next(1, 101); // Gera um número entre 1 e 100
@@ -59,7 +59,7 @@ Código:
             resposta = int.Parse(Console.ReadLine());
 
             // qual a condição para a pessoa ponturar?
-            if (resposta == numero1 + numero2) // Verifique se a RESPOSTA do usuário é IGUAL à soma
+            if (resposta == ) // Verifique se a RESPOSTA do usuário é IGUAL à soma
             {
                 pontuiacao++;
                 Console.WriteLine("Resposta correta! Sua pontuação é: " + pontuiacao);
@@ -101,7 +101,7 @@ Código:
             resposta = int.Parse(Console.ReadLine());
             
             // se a resposta for igual ao numero sorteado, a pessoa acertou
-            if (resposta == numerosorteio)
+            if (resposta == )
             {
                 acertou = true;
             }
@@ -114,7 +114,7 @@ Código:
             }
             // caso o contrario, se ele já tenha tentado 5 vezes, ele perde
             // se caso esse else if for verdadeiro, o jogo acaba
-            else if (tentativas == 4) // qual condição verifica se esta foi a 5ª tentativa (índice 4) e ele errou?
+            else if (tentativas ==) // qual condição verifica se esta foi a 5ª tentativa  e ele errou?
             {
                 Console.WriteLine($"Número de tentativas esgotadas. Você perdeu! O número era {numerosorteio}.");
             }
@@ -126,9 +126,9 @@ Código:
             }
 
         // quais as condições devem ser atendidas para continuar no jogo?
-        // 1. Ele NÃO pode ter acertado (acertou == false)
-        // 2. Ele PRECISA ter menos de 5 tentativas (tentativas < 5)
-        } while (acertou == false && tentativas < 5); 
+        // 1. Ele NÃO pode ter acertado 
+        // 2. Ele PRECISA ter menos de 5 tentativas 
+        } while (acertou   && tentativas ); 
 
 
 ## Exercicio 3
@@ -158,14 +158,14 @@ Código:
 
         // repetição usando for. A taboada vai de 1 a 9.
         // qual numero a variavel i deve ser menor ou igual para manter a repetição?
-        for (int i = 1; i <= 9; i++)
+        for (int i = 1; i <= ; i++)
         {
             // exibir qual numero deve ser digitado
             Console.Write($"Quanto é {seunumero} x {i}? ");
             resposta = int.Parse(Console.ReadLine());
 
             // qual operadores devemos usar para verificar se a resposta é igual à multiplicação?
-            if (resposta == seunumero * i)
+            if (resposta == )
             {
                 acertos++;
                 Console.WriteLine("Correto!");
@@ -178,7 +178,7 @@ Código:
 
         // quantos acertos deve ter para vencer?
         // Se o total é 9 e o limite de erros é 4, você precisa de 5 acertos.
-        if (acertos >= 5)
+        if (acertos )
         {
             Console.WriteLine("Parabens, você ganhou!");
         }
